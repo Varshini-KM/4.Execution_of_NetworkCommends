@@ -27,7 +27,7 @@ This commands includes
 <BR>
 
 ## Output
-UPLOADED
+[text](<../OneDrive/Desktop/CN/exp 4 NETWORK COMMANDS VARSHINI K M.txt>)
 
 ## Result
 Thus Execution of Network commands Performed 

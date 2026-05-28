@@ -1,0 +1,785 @@
+Microsoft Windows [Version 10.0.26200.8457]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\acer>hostname
+TMP215-75-G2
+
+C:\Users\acer>systeminfo
+
+Host Name:                     TMP215-75-G2
+OS Name:                       Microsoft Windows 11 Home Single Language
+OS Version:                    10.0.26200 N/A Build 26200
+OS Manufacturer:               Microsoft Corporation
+OS Configuration:              Standalone Workstation
+OS Build Type:                 Multiprocessor Free
+Registered Owner:              acer
+Registered Organization:       N/A
+Product ID:                    00342-42784-66206-AAOEM
+Original Install Date:         01-09-2025, 15:21:05
+System Boot Time:              22-05-2026, 08:11:01
+System Manufacturer:           Acer
+System Model:                  TravelMate P215-75-G2-TCO
+System Type:                   x64-based PC
+Processor(s):                  1 Processor(s) Installed.
+                               [01]: Intel64 Family 6 Model 170 Stepping 4 GenuineIntel ~1200 Mhz
+BIOS Version:                  INSYDE Corp. V1.05tt01a, 01-09-2025
+Windows Directory:             C:\Windows
+System Directory:              C:\Windows\system32
+Boot Device:                   \Device\HarddiskVolume1
+System Locale:                 en-us;English (United States)
+Input Locale:                  00004009
+Time Zone:                     (UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi
+Total Physical Memory:         15,869 MB
+Available Physical Memory:     2,151 MB
+Virtual Memory: Max Size:      25,382 MB
+Virtual Memory: Available:     1,264 MB
+Virtual Memory: In Use:        24,118 MB
+Page File Location(s):         C:\pagefile.sys
+Domain:                        WORKGROUP
+Logon Server:                  \\TMP215-75-G2
+Hotfix(s):                     4 Hotfix(s) Installed.
+                               [01]: KB5087051
+                               [02]: KB5054156
+                               [03]: KB5089549
+                               [04]: KB5092762
+Network Card(s):               2 NIC(s) Installed.
+                               [01]: Intel(R) Wi-Fi 6E AX211 160MHz
+                                     Connection Name: Wi-Fi
+                                     DHCP Enabled:    Yes
+                                     DHCP Server:     255.255.255.255
+                                     IP address(es)
+                                     [01]: 169.254.59.21
+                                     [02]: fe80::66ba:a228:5136:d8fb
+                                     [03]: 2403:8600:c090:42:0:4fe:19d5:ea3
+                               [02]: Realtek PCIe GbE Family Controller
+                                     Connection Name: Ethernet
+                                     Status:          Media disconnected
+Virtualization-based security: Status: Running
+                               Required Security Properties:
+                                     Base Virtualization Support
+                               Available Security Properties:
+                                     Base Virtualization Support
+                                     Secure Boot
+                                     DMA Protection
+                                     UEFI Code Readonly
+                                     SMM Security Mitigations 1.0
+                                     Mode Based Execution Control
+                                     APIC Virtualization
+                               Services Configured:
+                                     Hypervisor enforced Code Integrity
+                               Services Running:
+                                     Hypervisor enforced Code Integrity
+                               App Control for Business policy: Enforced
+                               App Control for Business user mode policy: Enforced
+                               Security Features Enabled:
+Hyper-V Requirements:          A hypervisor has been detected. Features required for Hyper-V will not be displayed.
+
+C:\Users\acer>ipconfig
+
+Windows IP Configuration
+
+
+Wireless LAN adapter Local Area Connection* 1:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . : saveetha.in
+   IPv6 Address. . . . . . . . . . . : 2403:8600:c090:42:0:4fe:19d5:ea3
+   Link-local IPv6 Address . . . . . : fe80::66ba:a228:5136:d8fb%3
+   Autoconfiguration IPv4 Address. . : 169.254.59.21
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : fe80::eedd:24ff:fe3d:ced5%3
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+C:\Users\acer>getmac
+
+Physical Address    Transport Name
+=================== ==========================================================
+FC-6D-77-6D-AA-C9   \Device\Tcpip_{05DFA269-CEFB-4295-ADCE-7123750CCF35}
+74-D4-DD-CF-7A-D6   Media disconnected
+
+C:\Users\acer>ping google.com
+
+Pinging google.com [2404:6800:4007:83b::200e] with 32 bytes of data:
+Reply from 2404:6800:4007:83b::200e: time=86ms
+Reply from 2404:6800:4007:83b::200e: time=28ms
+Reply from 2404:6800:4007:83b::200e: time=15ms
+Reply from 2404:6800:4007:83b::200e: time=248ms
+
+Ping statistics for 2404:6800:4007:83b::200e:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 15ms, Maximum = 248ms, Average = 94ms
+
+C:\Users\acer>nslookup google.com
+Server:  UnKnown
+Address:  2403:8600:c090:42:a000::200
+
+Non-authoritative answer:
+Name:    google.com
+Addresses:  2404:6800:4007:83b::200e
+          172.217.24.14
+
+
+C:\Users\acer>tracert google.com
+
+Tracing route to google.com [2404:6800:4007:83b::200e]
+over a maximum of 30 hops:
+
+  1   138 ms   107 ms    26 ms  2403:8600:c090:42::1
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4    43 ms     7 ms     6 ms  lcmaaa-an-in-x0e.1e100.net [2404:6800:4007:83b::200e]
+
+Trace complete.
+
+C:\Users\acer>pathping google.com
+
+Tracing route to google.com [2404:6800:4007:83b::200e]
+over a maximum of 30 hops:
+  0  TMP215-75-G2.saveetha.in [2403:8600:c090:42:0:4fe:19d5:ea3]
+  1  2403:8600:c090:42::1
+  2     *        *        *
+Computing statistics for 25 seconds...
+            Source to Here   This Node/Link
+Hop  RTT    Lost/Sent = Pct  Lost/Sent = Pct  Address
+  0                                           TMP215-75-G2.saveetha.in [2403:8600:c090:42:0:4fe:19d5:ea3]
+                                0/ 100 =  0%   |
+  1   56ms     0/ 100 =  0%     0/ 100 =  0%  2403:8600:c090:42::1
+
+Trace complete.
+
+C:\Users\acer>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:5141         TMP215-75-G2:59101     ESTABLISHED
+  TCP    127.0.0.1:6000         TMP215-75-G2:49196     ESTABLISHED
+  TCP    127.0.0.1:6500         TMP215-75-G2:64554     ESTABLISHED
+  TCP    127.0.0.1:8000         TMP215-75-G2:51533     ESTABLISHED
+  TCP    127.0.0.1:46935        TMP215-75-G2:58629     ESTABLISHED
+  TCP    127.0.0.1:46936        TMP215-75-G2:49685     ESTABLISHED
+  TCP    127.0.0.1:46937        TMP215-75-G2:49686     ESTABLISHED
+  TCP    127.0.0.1:49196        TMP215-75-G2:6000      ESTABLISHED
+  TCP    127.0.0.1:49669        TMP215-75-G2:49670     ESTABLISHED
+  TCP    127.0.0.1:49670        TMP215-75-G2:49669     ESTABLISHED
+  TCP    127.0.0.1:49677        TMP215-75-G2:49678     ESTABLISHED
+  TCP    127.0.0.1:49678        TMP215-75-G2:49677     ESTABLISHED
+  TCP    127.0.0.1:49679        TMP215-75-G2:49680     ESTABLISHED
+  TCP    127.0.0.1:49680        TMP215-75-G2:49679     ESTABLISHED
+  TCP    127.0.0.1:49681        TMP215-75-G2:49682     ESTABLISHED
+  TCP    127.0.0.1:49682        TMP215-75-G2:49681     ESTABLISHED
+  TCP    127.0.0.1:49683        TMP215-75-G2:49684     ESTABLISHED
+  TCP    127.0.0.1:49684        TMP215-75-G2:49683     ESTABLISHED
+  TCP    127.0.0.1:49685        TMP215-75-G2:46936     ESTABLISHED
+  TCP    127.0.0.1:49686        TMP215-75-G2:46937     ESTABLISHED
+  TCP    127.0.0.1:49687        TMP215-75-G2:49688     ESTABLISHED
+  TCP    127.0.0.1:49688        TMP215-75-G2:49687     ESTABLISHED
+  TCP    127.0.0.1:51084        TMP215-75-G2:58995     ESTABLISHED
+  TCP    127.0.0.1:51533        TMP215-75-G2:8000      ESTABLISHED
+  TCP    127.0.0.1:52391        TMP215-75-G2:58995     ESTABLISHED
+  TCP    127.0.0.1:55353        TMP215-75-G2:58995     ESTABLISHED
+  TCP    127.0.0.1:58623        TMP215-75-G2:58624     ESTABLISHED
+  TCP    127.0.0.1:58624        TMP215-75-G2:58623     ESTABLISHED
+  TCP    127.0.0.1:58625        TMP215-75-G2:58626     ESTABLISHED
+  TCP    127.0.0.1:58626        TMP215-75-G2:58625     ESTABLISHED
+  TCP    127.0.0.1:58627        TMP215-75-G2:58628     ESTABLISHED
+  TCP    127.0.0.1:58628        TMP215-75-G2:58627     ESTABLISHED
+  TCP    127.0.0.1:58629        TMP215-75-G2:46935     ESTABLISHED
+  TCP    127.0.0.1:58995        TMP215-75-G2:51084     ESTABLISHED
+  TCP    127.0.0.1:58995        TMP215-75-G2:52391     ESTABLISHED
+  TCP    127.0.0.1:58995        TMP215-75-G2:55353     ESTABLISHED
+  TCP    127.0.0.1:59101        TMP215-75-G2:5141      ESTABLISHED
+  TCP    127.0.0.1:64554        TMP215-75-G2:6500      ESTABLISHED
+  TCP    [::1]:15161            TMP215-75-G2:52628     ESTABLISHED
+  TCP    [::1]:15161            TMP215-75-G2:55248     ESTABLISHED
+  TCP    [::1]:15161            TMP215-75-G2:59103     ESTABLISHED
+  TCP    [::1]:52628            TMP215-75-G2:15161     ESTABLISHED
+  TCP    [::1]:55248            TMP215-75-G2:15161     ESTABLISHED
+  TCP    [::1]:59103            TMP215-75-G2:15161     ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:49273  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:49322  sl-in-f188:5228        ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:49421  [2603:1040:a06:6::]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:51001  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:51054  whatsapp-cdn6-shv-02-maa3:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:51214  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:52711  [64:ff9b::68d0:105c]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:54632  [2603:1040:a06:6::]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:55006  [2a06:98c1:3107::6812:2715]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:56932  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:57175  lcdelw-in-f94:https    ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:57598  [2600:1901:0:47fc::]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:57694  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:59104  pnmaaa-bc-in-x0a:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:59148  [2403:8600:c090:42:a000::200]:domain  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:61141  [64:ff9b::3374:f66a]:https  ESTABLISHED
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:61142  [64:ff9b::d59:b30d]:https  TIME_WAIT
+  TCP    [2403:8600:c090:42:0:4fe:19d5:ea3]:64885  pnmaaa-bc-in-x0a:https  ESTABLISHED
+
+C:\Users\acer>arp -a
+
+Interface: 169.254.59.21 --- 0x3
+  Internet Address      Physical Address      Type
+  169.254.21.90         fc-6d-77-6b-77-9a     dynamic
+  169.254.35.143        fc-6d-77-8d-3a-1f     dynamic
+  169.254.71.92         fc-6d-77-9a-02-1d     dynamic
+  169.254.103.9         fc-6d-77-8a-e0-03     dynamic
+  169.254.156.106       fc-6d-77-99-ca-b9     dynamic
+  169.254.163.40        78-0c-b8-80-e9-81     dynamic
+  169.254.172.5         fc-6d-77-8b-98-c2     dynamic
+  169.254.209.182       fc-6d-77-89-7d-44     dynamic
+  169.254.248.246       fc-6d-77-6f-b7-e2     dynamic
+  224.0.0.22            01-00-5e-00-00-16     static
+  224.0.0.251           01-00-5e-00-00-fb     static
+  224.0.0.252           01-00-5e-00-00-fc     static
+  230.0.0.1             01-00-5e-00-00-01     static
+  239.255.255.250       01-00-5e-7f-ff-fa     static
+  255.255.255.255       ff-ff-ff-ff-ff-ff     static
+
+C:\Users\acer>route print
+===========================================================================
+Interface List
+ 16...fc 6d 77 6d aa ca ......Microsoft Wi-Fi Direct Virtual Adapter
+ 10...fe 6d 77 6d aa c9 ......Microsoft Wi-Fi Direct Virtual Adapter #2
+  3...fc 6d 77 6d aa c9 ......Intel(R) Wi-Fi 6E AX211 160MHz
+ 12...74 d4 dd cf 7a d6 ......Realtek PCIe GbE Family Controller
+  1...........................Software Loopback Interface 1
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    331
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    331
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+      169.254.0.0      255.255.0.0         On-link     169.254.59.21    286
+    169.254.59.21  255.255.255.255         On-link     169.254.59.21    286
+  169.254.255.255  255.255.255.255         On-link     169.254.59.21    286
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    331
+        224.0.0.0        240.0.0.0         On-link     169.254.59.21    286
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    331
+  255.255.255.255  255.255.255.255         On-link     169.254.59.21    286
+===========================================================================
+Persistent Routes:
+  None
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  3    286 ::/0                     fe80::eedd:24ff:fe3d:ced5
+  1    331 ::1/128                  On-link
+  3    286 2403:8600:c090:42::/84   On-link
+  3    286 2403:8600:c090:42:0:4fe:19d5:ea3/128
+                                    On-link
+  3    286 fe80::/64                On-link
+  3    286 fe80::66ba:a228:5136:d8fb/128
+                                    On-link
+  1    331 ff00::/8                 On-link
+  3    286 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+
+C:\Users\acer>net view
+There are no entries in the list.
+
+
+C:\Users\acer>tasklist
+
+Image Name                     PID Session Name        Session#    Mem Usage
+========================= ======== ================ =========== ============
+System Idle Process              0 Services                   0          8 K
+System                           4 Services                   0        144 K
+Secure System                  260 Services                   0     64,244 K
+Registry                       304 Services                   0     44,904 K
+smss.exe                       832 Services                   0        484 K
+csrss.exe                     1216 Services                   0      3,188 K
+csrss.exe                     1320 Console                    1      4,468 K
+wininit.exe                   1328 Services                   0      1,308 K
+winlogon.exe                  1416 Console                    1      6,544 K
+services.exe                  1436 Services                   0      9,620 K
+LsaIso.exe                    1484 Services                   0      1,612 K
+lsass.exe                     1492 Services                   0     17,932 K
+svchost.exe                   1632 Services                   0     28,764 K
+fontdrvhost.exe               1664 Console                    1      5,080 K
+fontdrvhost.exe               1672 Services                   0        708 K
+WUDFHost.exe                  1744 Services                   0      3,224 K
+svchost.exe                   1804 Services                   0     15,952 K
+svchost.exe                   1852 Services                   0      5,484 K
+dwm.exe                       1952 Console                    1   1,17,588 K
+WUDFHost.exe                  1976 Services                   0     13,420 K
+WUDFHost.exe                   968 Services                   0     14,872 K
+svchost.exe                   1936 Services                   0      2,716 K
+svchost.exe                   2080 Services                   0     15,508 K
+svchost.exe                   2092 Services                   0      1,472 K
+svchost.exe                   2116 Services                   0      9,048 K
+svchost.exe                   2264 Services                   0      8,796 K
+svchost.exe                   2316 Services                   0      5,944 K
+svchost.exe                   2380 Services                   0      6,996 K
+svchost.exe                   2388 Services                   0      6,028 K
+svchost.exe                   2484 Services                   0     10,672 K
+svchost.exe                   2520 Services                   0      5,272 K
+svchost.exe                   2544 Services                   0      5,428 K
+svchost.exe                   2604 Services                   0      2,060 K
+svchost.exe                   2640 Services                   0      7,000 K
+svchost.exe                   2652 Services                   0      2,540 K
+svchost.exe                   2676 Services                   0      4,664 K
+svchost.exe                   2688 Services                   0     17,080 K
+svchost.exe                   2884 Services                   0      7,304 K
+svchost.exe                   2972 Services                   0      7,608 K
+svchost.exe                   3336 Services                   0     10,624 K
+svchost.exe                   3368 Services                   0     11,676 K
+svchost.exe                   3384 Services                   0      5,468 K
+svchost.exe                   3376 Services                   0      1,772 K
+Memory Compression            3476 Services                   0   2,66,672 K
+svchost.exe                   3556 Services                   0      7,184 K
+svchost.exe                   3600 Services                   0      4,136 K
+svchost.exe                   3608 Services                   0      3,624 K
+svchost.exe                   3696 Services                   0     49,636 K
+svchost.exe                   3736 Services                   0      4,096 K
+svchost.exe                   3884 Services                   0     29,056 K
+svchost.exe                   3928 Services                   0      4,336 K
+svchost.exe                   3984 Services                   0     13,284 K
+svchost.exe                   4012 Services                   0     10,780 K
+spoolsv.exe                   4064 Services                   0      5,132 K
+svchost.exe                   3132 Services                   0     20,824 K
+svchost.exe                   3592 Services                   0      4,704 K
+svchost.exe                   3728 Services                   0      3,416 K
+svchost.exe                   4152 Services                   0      2,600 K
+svchost.exe                   4176 Services                   0      3,944 K
+OfficeClickToRun.exe          4192 Services                   0     15,124 K
+svchost.exe                   4208 Services                   0     27,876 K
+svchost.exe                   4220 Services                   0     29,596 K
+FMService64.exe               4312 Services                   0      9,232 K
+svchost.exe                   4424 Services                   0      7,492 K
+ARTAimmxService.exe           4464 Services                   0      2,456 K
+AAADSvc.exe                   4472 Services                   0      2,240 K
+MorphoPixyService.exe         4488 Services                   0      2,648 K
+AcerGAICameraService.exe      4500 Services                   0      2,664 K
+DtsApo4Service.exe            4516 Services                   0      3,156 K
+armsvc.exe                    4564 Services                   0      1,248 K
+AICO_svc.exe                  4572 Services                   0      4,308 K
+AcerPixyService.exe           4584 Services                   0      5,260 K
+MpDefenderCoreService.exe     4596 Services                   0     11,228 K
+ipfsvc.exe                    4624 Services                   0      3,128 K
+ADESv2Svc.exe                 4640 Services                   0      2,692 K
+AICO2_svc.exe                 4664 Services                   0      1,420 K
+AcerServiceWrapper.exe        4684 Services                   0      2,432 K
+AcerDIAgent.exe               4692 Services                   0      4,516 K
+RtkAudUService64.exe          4704 Services                   0      8,028 K
+AcerEZService.exe             4736 Services                   0      7,544 K
+IntelAudioService.exe         4756 Services                   0      7,552 K
+svchost.exe                   4852 Services                   0      4,836 K
+svchost.exe                   4860 Services                   0      5,412 K
+AcerSystemCentralService.     4896 Services                   0      2,360 K
+ipf_uf.exe                    4920 Services                   0      2,940 K
+svchost.exe                   5036 Services                   0      2,172 K
+svchost.exe                   1388 Services                   0      3,940 K
+MsMpEng.exe                   5132 Services                   0   1,69,096 K
+RstMwService.exe              5296 Services                   0      2,888 K
+svchost.exe                   5368 Services                   0     15,076 K
+svchost.exe                   5384 Services                   0     19,524 K
+jtagserver.exe                5484 Services                   0        924 K
+SafeExamBrowser.Service.e     5492 Services                   0      4,392 K
+WMIRegistrationService.ex     5668 Services                   0      2,120 K
+dasHost.exe                   5796 Services                   0      9,028 K
+svchost.exe                   6836 Services                   0      5,212 K
+AcerService.exe               7020 Services                   0      4,748 K
+conhost.exe                   7056 Services                   0      1,008 K
+dasHost.exe                   5320 Services                   0      1,068 K
+ipf_helper.exe                7456 Console                    1      3,276 K
+rundll32.exe                  7384 Console                    1      7,572 K
+svchost.exe                   7760 Services                   0     16,760 K
+svchost.exe                   8084 Services                   0      2,288 K
+sihost.exe                    6168 Console                    1     23,580 K
+svchost.exe                   5268 Console                    1     32,592 K
+svchost.exe                   7748 Console                    1      1,160 K
+svchost.exe                   7892 Console                    1     24,380 K
+taskhostw.exe                 8292 Console                    1      9,144 K
+McUpdaterModule.exe           8316 Console                    1      2,600 K
+SSScheduler.exe               8340 Console                    1      1,024 K
+svchost.exe                   8348 Services                   0     19,664 K
+wlanext.exe                   8432 Services                   0      2,504 K
+explorer.exe                  9080 Console                    1   2,80,528 K
+AggregatorHost.exe            9188 Services                   0      3,060 K
+svchost.exe                   9212 Services                   0     14,132 K
+svchost.exe                   9348 Services                   0      8,344 K
+svchost.exe                   9396 Services                   0     25,372 K
+RtkAudUService64.exe          9508 Console                    1      5,672 K
+CrossDeviceResume.exe         9720 Console                    1     25,600 K
+svchost.exe                   1392 Services                   0     16,540 K
+svchost.exe                   4276 Console                    1     12,112 K
+StartMenuExperienceHost.e     9540 Console                    1   1,28,076 K
+SearchHost.exe               10108 Console                    1     57,696 K
+WidgetBoard.exe              10288 Console                    1     35,792 K
+AcerSysMonitorService.exe    10372 Services                   0      2,612 K
+AcerSysHardwareService.ex    10380 Console                    1      2,800 K
+RuntimeBroker.exe            10436 Console                    1     15,156 K
+svchost.exe                  10452 Console                    1      8,340 K
+WidgetService.exe            10756 Console                    1     19,788 K
+AICO Out Painting.exe        11700 Console                    1      3,212 K
+AICO 2 AC2S.exe              11796 Console                    1      1,420 K
+msedgewebview2.exe           11584 Console                    1     46,428 K
+msedgewebview2.exe           12264 Console                    1      2,544 K
+msedgewebview2.exe           12704 Console                    1     28,688 K
+msedgewebview2.exe           12732 Console                    1     13,060 K
+msedgewebview2.exe           13116 Console                    1      8,336 K
+MicrosoftStartFeedProvide    13132 Console                    1     31,100 K
+PhoneExperienceHost.exe       6900 Console                    1     22,132 K
+NisSrv.exe                   14080 Services                   0      5,068 K
+SecurityHealthSystray.exe    14248 Console                    1      2,368 K
+SecurityHealthService.exe    14272 Services                   0      9,884 K
+ctfmon.exe                   11764 Console                    1     17,720 K
+RtkAudUService64.exe         13704 Console                    1     11,036 K
+OneDrive.exe                 14184 Console                    1   2,05,316 K
+svchost.exe                  13376 Services                   0      5,116 K
+AdobeCollabSync.exe          14072 Console                    1     20,876 K
+AdobeCollabSync.exe          14404 Console                    1     24,040 K
+SearchIndexer.exe            14624 Services                   0     35,556 K
+WhatsApp.Root.exe            15132 Console                    1   1,42,616 K
+RuntimeBroker.exe            15268 Console                    1      3,120 K
+TextInputHost.exe            14664 Console                    1     27,404 K
+ADESv2BW.exe                 11180 Services                   0      4,444 K
+msedgewebview2.exe           15500 Console                    1     48,940 K
+WmiPrvSE.exe                 15840 Services                   0      8,872 K
+AcerGAICameraW.exe           10720 Console                    1      6,024 K
+svchost.exe                  17896 Services                   0      5,696 K
+QuickPanel.exe               17952 Console                    1     31,632 K
+IntelGraphicsSoftware.Ser    18048 Services                   0      8,720 K
+svchost.exe                  18260 Services                   0      5,008 K
+QuickPanel.exe               18268 Console                    1     11,832 K
+PresentMonService.exe        18324 Services                   0      2,020 K
+conhost.exe                  18352 Services                   0        988 K
+QuickPanelOSD.exe             2284 Console                    1     55,148 K
+QuickPanel.exe                3296 Console                    1     10,916 K
+CefSharp.BrowserSubproces     7812 Console                    1     11,860 K
+CefSharp.BrowserSubproces    16456 Console                    1     19,024 K
+CefSharp.BrowserSubproces    16380 Console                    1      6,468 K
+CefSharp.BrowserSubproces    15012 Console                    1      6,540 K
+CefSharp.BrowserSubproces     6712 Console                    1     17,700 K
+svchost.exe                  11228 Services                   0      4,576 K
+PSExpressBroker.exe          17660 Console                    1     37,776 K
+svchost.exe                   8584 Services                   0      5,512 K
+PSExpressCore.exe            16100 Console                    1   1,67,036 K
+RuntimeBroker.exe            15164 Console                    1     11,324 K
+Adobe Crash Processor_low    18568 Console                    1      2,188 K
+ExpressPrtScBackgroundApp    18668 Console                    1     13,608 K
+msedgewebview2.exe           15588 Console                    1   1,11,948 K
+msedgewebview2.exe           18632 Console                    1      2,528 K
+msedgewebview2.exe           19028 Console                    1   1,91,768 K
+msedgewebview2.exe           19108 Console                    1     29,996 K
+msedgewebview2.exe           19004 Console                    1      7,276 K
+msedgewebview2.exe            5292 Console                    1   4,14,084 K
+wpscloudsvr.exe              18640 Console                    1      5,256 K
+AcerQAAgent.exe               4848 Services                   0      9,360 K
+AcerCCAgent.exe               7392 Services                   0      5,148 K
+PushNotificationsLongRunn    10252 Console                    1      2,524 K
+msedgewebview2.exe            5076 Console                    1     59,120 K
+msedgewebview2.exe           20464 Console                    1      2,360 K
+msedgewebview2.exe           18408 Console                    1     75,784 K
+msedgewebview2.exe           19464 Console                    1     29,800 K
+msedgewebview2.exe            9556 Console                    1     11,204 K
+msedgewebview2.exe           20212 Console                    1      7,604 K
+msedgewebview2.exe           20332 Console                    1   1,11,064 K
+msedgewebview2.exe           20672 Console                    1      5,856 K
+msedgewebview2.exe           21108 Console                    1      5,936 K
+unsecapp.exe                 21292 Services                   0      3,512 K
+ACCUserPS.exe                19428 Console                    1      2,692 K
+AQAUserPS.exe                11476 Console                    1      9,016 K
+SpotifyWidgetProvider.exe    10336 Console                    1     33,556 K
+crashpad_handler.exe         19676 Console                    1      1,784 K
+RuntimeBroker.exe            18808 Console                    1      3,676 K
+svchost.exe                  21896 Console                    1     16,644 K
+svchost.exe                  22140 Services                   0      5,180 K
+svchost.exe                  22304 Services                   0      8,616 K
+svchost.exe                  22472 Services                   0     29,200 K
+svchost.exe                  21620 Services                   0      5,404 K
+svchost.exe                   8812 Services                   0      2,188 K
+LockApp.exe                  16512 Console                    1     69,204 K
+RuntimeBroker.exe            22376 Console                    1     26,868 K
+svchost.exe                   2828 Console                    1      6,816 K
+ApplicationFrameHost.exe     16448 Console                    1      6,112 K
+SystemSettings.exe           21012 Console                    1        284 K
+svchost.exe                  20504 Services                   0      1,296 K
+svchost.exe                   8004 Console                    1      2,172 K
+svchost.exe                   4004 Services                   0      4,184 K
+UserOOBEBroker.exe           12276 Console                    1      5,436 K
+svchost.exe                  11648 Services                   0      6,972 K
+AppActions.exe               22044 Console                    1      9,496 K
+svchost.exe                  12188 Services                   0      1,672 K
+ShellExperienceHost.exe       4304 Console                    1     49,880 K
+RuntimeBroker.exe             9236 Console                    1     22,472 K
+FileCoAuth.exe               10448 Console                    1     12,820 K
+photolaunch.exe              22744 Console                    1      7,964 K
+svchost.exe                  23832 Services                   0     16,012 K
+mscopilot.exe                25784 Console                    1     49,120 K
+mscopilot.exe                25820 Console                    1      2,976 K
+mscopilot.exe                26008 Console                    1      9,176 K
+mscopilot.exe                26016 Console                    1     21,912 K
+mscopilot.exe                26072 Console                    1      5,036 K
+svchost.exe                  25456 Services                   0      3,740 K
+RtkUWP.exe                    4172 Console                    1     15,836 K
+RuntimeBroker.exe            14304 Console                    1      7,408 K
+msedge.exe                   14288 Console                    1     66,112 K
+msedge.exe                    4608 Console                    1      3,312 K
+msedge.exe                   24152 Console                    1     25,936 K
+msedge.exe                    2464 Console                    1      9,452 K
+msedge.exe                   17856 Console                    1      6,596 K
+msedge.exe                    6640 Console                    1     11,960 K
+msedge.exe                    7720 Console                    1      8,116 K
+ShellHost.exe                 4040 Console                    1     10,544 K
+Code.exe                      1972 Console                    1   1,52,540 K
+Code.exe                      3856 Console                    1      3,680 K
+Code.exe                     17884 Console                    1   1,96,760 K
+Code.exe                     18692 Console                    1     22,584 K
+Code.exe                     19360 Console                    1   1,94,576 K
+Code.exe                      9128 Console                    1     55,280 K
+Code.exe                     16352 Console                    1   1,07,404 K
+Code.exe                      4836 Console                    1     28,836 K
+Code.exe                     18112 Console                    1     91,632 K
+pet.exe                      17256 Console                    1      2,772 K
+conhost.exe                  21092 Console                    1      1,168 K
+pet.exe                      21904 Console                    1        780 K
+conhost.exe                  26364 Console                    1      1,200 K
+OpenConsole.exe              22828 Console                    1      1,908 K
+powershell.exe                1876 Console                    1      5,488 K
+Code.exe                      6832 Console                    1     46,896 K
+Acrobat.exe                  19340 Console                    1     18,512 K
+Acrobat.exe                  23184 Console                    1   2,50,340 K
+AcroCEF.exe                   3972 Console                    1     36,372 K
+AcroCEF.exe                  26436 Console                    1     18,940 K
+AcroCEF.exe                   4272 Console                    1      7,236 K
+AcroCEF.exe                   7536 Console                    1     20,796 K
+AcroCEF.exe                  20104 Console                    1     19,228 K
+msedgewebview2.exe            3404 Console                    1     54,488 K
+msedgewebview2.exe           23108 Console                    1      2,764 K
+msedgewebview2.exe           13580 Console                    1     16,848 K
+msedgewebview2.exe            6016 Console                    1     23,544 K
+msedgewebview2.exe            2708 Console                    1      8,684 K
+msedgewebview2.exe           17128 Console                    1     13,228 K
+msedgewebview2.exe            2024 Console                    1     17,624 K
+msedgewebview2.exe           10828 Console                    1     17,692 K
+msedgewebview2.exe           12776 Console                    1     14,400 K
+AcroCEF.exe                   7492 Console                    1     17,160 K
+msedgewebview2.exe            2628 Console                    1     19,984 K
+msedgewebview2.exe           18172 Console                    1     24,524 K
+msedgewebview2.exe            9920 Console                    1     24,904 K
+OpenConsole.exe               1608 Console                    1      2,648 K
+powershell.exe               11108 Console                    1     12,756 K
+python3.13.exe               26608 Console                    1      5,864 K
+OpenConsole.exe              11936 Console                    1      4,092 K
+powershell.exe               21836 Console                    1     15,304 K
+python3.13.exe                9924 Console                    1      5,440 K
+Code.exe                     22228 Console                    1   1,80,904 K
+Code.exe                     11084 Console                    1     36,836 K
+Code.exe                      4112 Console                    1   1,13,668 K
+pet.exe                      23840 Console                    1      1,088 K
+conhost.exe                  15720 Console                    1      1,784 K
+pet.exe                      22364 Console                    1      2,720 K
+conhost.exe                   6828 Console                    1      1,560 K
+OpenConsole.exe               8592 Console                    1      3,196 K
+powershell.exe               10780 Console                    1     11,488 K
+Code.exe                      8544 Console                    1     52,020 K
+OpenConsole.exe              11416 Console                    1      3,244 K
+powershell.exe               17160 Console                    1     15,472 K
+python3.13.exe               13152 Console                    1      7,992 K
+OpenConsole.exe              16540 Console                    1      3,268 K
+powershell.exe               22296 Console                    1     14,668 K
+python3.13.exe               22632 Console                    1      6,644 K
+mscopilot_proxy.exe          11652 Console                    1      7,868 K
+dllhost.exe                   3620 Console                    1     14,404 K
+dllhost.exe                  12000 Console                    1      9,580 K
+dllhost.exe                  22784 Console                    1      7,480 K
+Code.exe                     13676 Console                    1   2,03,624 K
+Code.exe                      7172 Console                    1     36,304 K
+Code.exe                     25644 Console                    1     96,220 K
+pet.exe                      17064 Console                    1      3,620 K
+conhost.exe                  24512 Console                    1      3,024 K
+pet.exe                      23964 Console                    1      1,920 K
+conhost.exe                  17508 Console                    1      2,920 K
+OpenConsole.exe              23608 Console                    1      3,100 K
+powershell.exe               16404 Console                    1     13,456 K
+Code.exe                     18876 Console                    1     56,308 K
+taskhostw.exe                10012 Console                    1     17,840 K
+OpenConsole.exe              19448 Console                    1      3,664 K
+powershell.exe                6996 Console                    1     19,052 K
+python3.13.exe                6384 Console                    1      9,788 K
+OpenConsole.exe              26300 Console                    1      4,288 K
+powershell.exe                8664 Console                    1     27,304 K
+Code.exe                     18796 Console                    1     36,204 K
+Code.exe                     18936 Console                    1   2,12,700 K
+Code.exe                     16372 Console                    1     36,848 K
+Code.exe                     10076 Console                    1   1,18,116 K
+pet.exe                      18460 Console                    1      3,712 K
+conhost.exe                  25236 Console                    1      3,096 K
+pet.exe                      26712 Console                    1      3,352 K
+conhost.exe                  19136 Console                    1      2,232 K
+OpenConsole.exe              27404 Console                    1      4,840 K
+powershell.exe               25140 Console                    1     24,512 K
+Code.exe                     27512 Console                    1   1,05,040 K
+Code.exe                     27776 Console                    1   1,89,592 K
+svchost.exe                   2612 Services                   0      5,284 K
+Code.exe                     27132 Console                    1     46,464 K
+Code.exe                     27188 Console                    1   1,17,548 K
+OpenConsole.exe              27140 Console                    1      7,064 K
+powershell.exe               17084 Console                    1     37,904 K
+pet.exe                       2200 Console                    1      5,524 K
+conhost.exe                  23572 Console                    1      4,892 K
+pet.exe                      28076 Console                    1      5,740 K
+conhost.exe                  28044 Console                    1      4,388 K
+OpenConsole.exe              27932 Console                    1      6,328 K
+powershell.exe               28252 Console                    1     36,444 K
+Code.exe                     23640 Console                    1   1,14,168 K
+chrome.exe                   31228 Console                    1   2,51,276 K
+chrome.exe                    9544 Console                    1      9,440 K
+chrome.exe                    8392 Console                    1   4,50,280 K
+chrome.exe                   30324 Console                    1     62,256 K
+chrome.exe                   30344 Console                    1     30,120 K
+chrome.exe                   30932 Console                    1     73,276 K
+chrome.exe                   30752 Console                    1     74,388 K
+chrome.exe                   30268 Console                    1   1,04,728 K
+chrome.exe                   17888 Console                    1   1,26,416 K
+w3wp.exe                     28872 Services                   0     17,128 K
+CodeSetup-stable-f6cfa2ea    23488 Console                    1      8,064 K
+CodeSetup-stable-f6cfa2ea    24500 Console                    1     36,200 K
+chrome.exe                   32272 Console                    1     68,504 K
+chrome.exe                   32052 Console                    1     94,920 K
+chrome.exe                   27048 Console                    1     47,068 K
+dllhost.exe                  27420 Console                    1     13,088 K
+svchost.exe                  33300 Services                   0      7,116 K
+FMToastNotification.exe      19384 Console                    1     11,048 K
+FMAudioMonitor.exe           31192 Console                    1     12,576 K
+dllhost.exe                   3616 Console                    1     11,348 K
+Code.exe                     28500 Console                    1   2,90,436 K
+Code.exe                     28048 Console                    1     45,732 K
+Code.exe                     19548 Console                    1     58,324 K
+Code.exe                      1068 Console                    1     64,036 K
+Code.exe                     25832 Console                    1     52,336 K
+Code.exe                     31120 Console                    1     45,616 K
+AICO Parallax Wallpaper.e    23796 Console                    1     17,428 K
+AICO AC2S.exe                16076 Console                    1     10,380 K
+Code.exe                     31944 Console                    1     83,128 K
+Code.exe                      6348 Console                    1   1,75,832 K
+pet.exe                      31900 Console                    1      9,844 K
+conhost.exe                   1528 Console                    1      6,640 K
+pet.exe                      30072 Console                    1      8,892 K
+conhost.exe                  23564 Console                    1      6,592 K
+OpenConsole.exe              32600 Console                    1     10,848 K
+powershell.exe               32980 Console                    1     73,396 K
+Code.exe                     30008 Console                    1   4,85,004 K
+WmiPrvSE.exe                 31696 Services                   0     22,828 K
+chrome.exe                   23072 Console                    1   3,53,204 K
+chrome.exe                   25436 Console                    1     30,296 K
+OpenConsole.exe              25384 Console                    1     10,888 K
+powershell.exe               30572 Console                    1     76,584 K
+python3.13.exe               31352 Console                    1     24,772 K
+OpenConsole.exe              33296 Console                    1     10,804 K
+powershell.exe               32860 Console                    1     75,924 K
+python3.13.exe               33740 Console                    1     24,624 K
+audiodg.exe                  30984 Services                   0     23,836 K
+smartscreen.exe              29260 Console                    1     12,392 K
+OneDrive.Sync.Service.exe      468 Console                    1   1,23,128 K
+Code.exe                     26784 Console                    1   2,87,228 K
+Code.exe                      6688 Console                    1   1,42,632 K
+Code.exe                     17164 Console                    1   2,21,600 K
+pet.exe                      25616 Console                    1      9,884 K
+conhost.exe                  27936 Console                    1      7,248 K
+pet.exe                      32804 Console                    1      9,668 K
+conhost.exe                  15204 Console                    1      7,256 K
+OpenConsole.exe               1048 Console                    1     11,472 K
+powershell.exe               31600 Console                    1     73,636 K
+Code.exe                      9612 Console                    1   5,31,216 K
+OpenConsole.exe              24460 Console                    1     11,420 K
+powershell.exe               24560 Console                    1     76,644 K
+OpenConsole.exe              14180 Console                    1     11,380 K
+powershell.exe               25648 Console                    1     76,540 K
+cmd.exe                      28992 Console                    1      7,712 K
+conhost.exe                  29288 Console                    1     10,012 K
+OpenConsole.exe              24036 Console                    1     14,748 K
+WindowsTerminal.exe          31396 Console                    1   1,27,896 K
+SearchProtocolHost.exe       32732 Services                   0     21,040 K
+SearchFilterHost.exe         17448 Services                   0     12,452 K
+SearchFilterHost.exe         23440 Services                   0     12,952 K
+tasklist.exe                 28648 Console                    1     11,816 K
+
+C:\Users\acer>dir
+ Volume in drive C is ACER
+ Volume Serial Number is 9467-634A
+
+ Directory of C:\Users\acer
+
+16-05-2026  14:50    <DIR>          .
+15-09-2025  08:55    <DIR>          ..
+01-09-2025  19:43    <DIR>          .anaconda
+01-09-2025  12:20    <DIR>          .android
+22-09-2025  08:28    <DIR>          .blackbox-editor
+01-09-2025  19:43    <DIR>          .conda
+01-09-2025  19:43                25 .condarc
+01-09-2025  19:35    <DIR>          .continuum
+01-04-2026  10:55    <DIR>          .ipynb_checkpoints
+18-11-2025  06:23    <DIR>          .ipython
+17-03-2026  10:29    <DIR>          .jupyter
+02-10-2025  21:09                20 .lesshst
+17-12-2025  19:26    <DIR>          .matplotlib
+04-12-2025  22:09    <DIR>          .ms-ad
+29-12-2025  13:30    <DIR>          .spyder-py3
+01-09-2025  19:19    <DIR>          .vscode
+16-05-2026  08:51    <DIR>          .vscode-shared
+21-04-2026  16:18    <DIR>          19AI304-Fundamentals-of-C-Programming-2025-Odd-M1
+22-04-2026  10:47    <DIR>          19AI304-Fundamentals-of-C-Programming-2025-Odd-M2
+22-04-2026  11:33    <DIR>          19AI304-Fundamentals-of-C-Programming-2025-Odd-M3
+22-04-2026  14:40    <DIR>          19AI304-Fundamentals-of-C-Programming-2025-Odd-M4
+01-04-2026  10:55               922 car (1).csv
+01-09-2025  15:23    <DIR>          Contacts
+29-09-2025  09:39    <DIR>          Desktop
+27-09-2025  20:39    <DIR>          Documents
+22-05-2026  12:58    <DIR>          Downloads
+16-03-2026  12:57    <DIR>          EIGENVALUES-AND-EIGENVECTORS
+01-09-2025  15:23    <DIR>          Favorites
+13-09-2025  12:03    <DIR>          forms.html
+16-03-2026  13:41    <DIR>          Gaussian
+17-12-2025  19:28    <DIR>          Jedi
+01-09-2025  15:23    <DIR>          Links
+16-03-2026  13:17    <DIR>          LU-Decomposition
+17-03-2026  11:08    <DIR>          Multivariate-Linear-Regression
+01-09-2025  15:23    <DIR>          Music
+22-03-2026  18:39    <DIR>          Norm-of-a-matrix
+22-05-2026  08:11    <DIR>          OneDrive
+01-09-2025  13:10    <DIR>          PVsyst8.0_Data
+30-12-2025  13:40                 0 qms-bmh1.bmp
+30-12-2025  13:40                 0 qms-bmh2.bmp
+30-12-2025  13:40                 0 qms-bmh3.bmp
+22-03-2026  18:59    <DIR>          QRdecomposition
+30-12-2025  13:59               204 quartus2.ini
+30-12-2025  19:52            42,833 quartus2.qreg
+30-12-2025  13:40                 0 quartus_web_rules_file.txt
+01-09-2025  15:23    <DIR>          Saved Games
+01-09-2025  15:31    <DIR>          Searches
+17-03-2026  10:41    <DIR>          Univariate-Linear-Regression
+17-03-2026  11:02                 0 untitled
+17-03-2026  11:03            25,899 Untitled.ipynb
+01-04-2026  10:55                 0 untitled1
+17-03-2026  10:32               589 Untitled1.ipynb
+17-03-2026  11:02               589 Untitled2.ipynb
+20-03-2026  09:29             2,752 Untitled3.ipynb
+01-04-2026  10:57             1,574 Untitled4.ipynb
+13-09-2025  14:18    <DIR>          Videos
+              16 File(s)         75,407 bytes
+              40 Dir(s)  92,200,132,608 bytes free
+
+C:\Users\acer>
